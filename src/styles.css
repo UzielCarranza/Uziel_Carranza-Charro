@@ -1,13 +1,45 @@
+/*Introduction Component*/
 .wrapper-about_me {
     background-color: #0077b6;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: min(100% - 2em, 840px);
+    justify-content: space-evenly;
+    row-gap: 1em;
+}
+
+.wrapper-photo{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-about_me-content{
+    width: 35%;
+    height: auto;
+    justify-content: end;
+    margin: 3%;
+    row-gap: 0.5em;
+}
+
+.profile_photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    border: 5px solid #023047;
+    position: relative;
 }
 
 /*Miscellaneous*/
 .call-attention_word {
     color: #ffb703;
     font-weight: bold;
+}
+
+.responsive-column{
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
 }
