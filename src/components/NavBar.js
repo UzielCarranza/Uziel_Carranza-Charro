@@ -12,7 +12,8 @@ export const NavBar = () => {
 
     return (
         <nav className="navigation">
-            <a href="https://www.linkedin.com/in/uziel-carranza-charro/" className="brand-name">
+            <a href="https://www.linkedin.com/in/uziel-carranza-charro/"
+               target="_blank" className="brand-name">
                 Uziel Carranza Charro
             </a>
             {isNavExpanded ? <AiOutlineClose style={{color: "#fff", backgroundColor: "red"}} className="hamburger"
