@@ -1,5 +1,5 @@
 /*Code gather from https://blog.logrocket.com/create-responsive-navbar-react-css/*/
-import "./styles/navbar.css";
+import "../styles/navbar.css";
 import {useState} from "react";
 import {AiOutlineClose} from "react-icons/ai";
 import {BsPersonFill} from "react-icons/bs";

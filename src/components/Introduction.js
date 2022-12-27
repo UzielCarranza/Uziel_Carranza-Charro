@@ -1,5 +1,5 @@
-import "./styles.css";
-import profile_img from "./img/profile_img.png";
+import "../styles/styles.css";
+import profile_img from "../img/profile_img.png";
 
 export const Introduction = () => {
     //TODO: Add link to get to know me directing to linkedin page
