@@ -1,0 +1,13 @@
+.wrapper-about_me {
+    background-color: #0077b6;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Miscellaneous*/
+.call-attention_word {
+    color: #ffb703;
+    font-weight: bold;
+}
