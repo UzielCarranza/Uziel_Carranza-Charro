@@ -1,0 +1,22 @@
+.link-element--wrapper{
+    width: 100%;
+    height: 40%;
+    margin: 1em auto;
+    justify-content: space-between;
+    padding: 2em;
+}
+.responsive-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.link-element{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #023047;
+}
+
+
+/*removes blue link color... it inherits color from parent*/
+a { color: inherit; }
