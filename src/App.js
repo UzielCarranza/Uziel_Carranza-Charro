@@ -4,8 +4,8 @@ import {Introduction} from "./Introduction";
 function App() {
     return (
         <>
+            <NavBar/>
             <Introduction/>
-            {/*<NavBar/>*/}
         </>
     )
         ;
