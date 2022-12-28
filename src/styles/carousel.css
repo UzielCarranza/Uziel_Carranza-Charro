@@ -1,0 +1,45 @@
+
+
+.carousel-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.slider-wrapper > ul > li > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    height: 25em;
+}
+.slider-wrapper > ul > li > div > .project-img{
+    margin: 2em auto;
+    z-index: 0;
+}
+.link-element-carousel{
+    height: 50%;
+    width: 10%;
+}
+
+
+.control-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 70%;
+}
+
+.legend{
+    opacity: 1;
+}
+.legend-hovering:hover{
+    display: block;
+    cursor: pointer;
+}
