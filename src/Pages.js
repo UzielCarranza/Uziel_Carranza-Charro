@@ -1,6 +1,5 @@
 import {Routes, Route} from "react-router-dom";
 import React from "react";
-import {Projects} from "./components/Projects";
 import App from "./App";
 import {FrontEnd} from "./components/FrontEnd";
 
