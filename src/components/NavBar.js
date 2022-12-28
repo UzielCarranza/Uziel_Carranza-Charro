@@ -4,11 +4,18 @@ import {useState} from "react";
 import {AiOutlineClose} from "react-icons/ai";
 import {BsPersonFill} from "react-icons/bs";
 import {GrPersonalComputer, GrSend, GrTask} from "react-icons/gr";
+import {RiArrowGoBackFill} from "react-icons/ri";
 
 //TODO: Add links to all redirecting elements
 
 export const NavBar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const [isSubMenuExpanded, setIsSubMenuExpanded] = useState(false);
+
+    const closeMenu = () => {
+        setIsNavExpanded(false);
+        setIsSubMenuExpanded(false);
+    }
 
     return (
         <nav className="navigation">
@@ -17,8 +24,8 @@ export const NavBar = () => {
                 Uziel Carranza Charro
             </a>
             {isNavExpanded ? <AiOutlineClose style={{color: "#fff", backgroundColor: "red"}} className="hamburger"
-                                             onClick={() => setIsNavExpanded(!isNavExpanded)}/>
-                : <button className="hamburger" onClick={() => setIsNavExpanded(!isNavExpanded)}>
+                                             onClick={closeMenu}/>
+                : <button className="hamburger" onClick={() => setIsNavExpanded(true)}>
                     {/* icon from heroicons.com */}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -34,30 +41,53 @@ export const NavBar = () => {
                     </svg>
                 </button>
             }
-            <div
-                className={
-                    isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-                }
-            >
-                <ul>
-                    <li>
-                        <a href="/about">About Me</a>
-                        <BsPersonFill/>
-                    </li>
-                    <li>
-                        <a href="/projects">Projects</a>
-                        <GrTask/>
-                    </li>
-                    <li>
-                        <a href="/tech-stack">Tech stack</a>
-                        <GrPersonalComputer/>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact Me</a>
-                        <GrSend/>
-                    </li>
-                </ul>
-            </div>
+
+            {isSubMenuExpanded ?
+                <div
+                    className={
+                        isSubMenuExpanded ? "navigation-menu expanded" : "navigation-menu"
+                    }
+                >
+                    <ul id="submenu">
+                        <RiArrowGoBackFill style={{color: "#283b8b"}} className="close-submenu"
+                                           onClick={() => setIsSubMenuExpanded(false)}/>
+                        <li>
+                            <a href="/front-end">Front End</a>
+                            <BsPersonFill/>
+                        </li>
+                        <li>
+                            <a href="/back-end">Back End</a>
+                            <GrTask/>
+                        </li>
+                        <li>
+                            <a href="/full-stack">Full Stack</a>
+                            <GrPersonalComputer/>
+                        </li>
+                    </ul>
+                </div>
+                :
+                <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+                    <ul>
+                        <li>
+                            <a href="/about">About Me</a>
+                            <BsPersonFill/>
+                        </li>
+                        <li onClick={() => setIsSubMenuExpanded(!isSubMenuExpanded)}>
+                            <a href="#" onClick={(e) => e.preventDefault()}>Projects</a>
+                            <GrTask/>
+                        </li>
+                        <li>
+                            <a href="/tech-stack">Tech stack</a>
+                            <GrPersonalComputer/>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact Me</a>
+                            <GrSend/>
+                        </li>
+                    </ul>
+                </div>}
+
+
         </nav>
     );
 }
