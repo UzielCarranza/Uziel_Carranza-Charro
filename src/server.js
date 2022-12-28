@@ -4,7 +4,7 @@ export const developmentProjects = {
             {
                 id: 1,
                 title: 'bomb reporter',
-                url: 'img/bomb-reporter.png',
+                url: 'img/frontEnd/pokemons-lister.png',
                 description: 'A full-stack application developed by a team of four developers focusing to give Ukrainians the tools to report bombs near their area.',
                 github_location: `https://github.com/Team-4-capstone`
             },
@@ -12,14 +12,14 @@ export const developmentProjects = {
             {
                 id: 2,
                 title: 'GetMyWeather',
-                url: 'img/weather.png',
+                url: 'img/frontEnd/weather.png',
                 description: 'A web application developed with BootStrap, vanilla javaScript, CSS3, and HTML5',
                 github_location: 'https://github.com/UzielCarranza/weather-app'
             },
             {
                 id: 2,
                 title: 'Pokemon Lister ',
-                url: 'img/pokemons-lister.png',
+                url: 'img/frontEnd/pokemons-lister.png',
                 description: 'A React web application that displays Pokemons in card format. Some of the features include pagination, sorting options, etc...',
                 github_location: 'https://github.com/UzielCarranza/pokemon-lister'
             },
@@ -27,7 +27,7 @@ export const developmentProjects = {
             {
                 id: 3,
                 title: 'Coffee Project',
-                url: 'img/coffee.png',
+                url: 'img/frontEnd/coffee.png',
                 description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
                 github_location: 'https://uziel-jordan.github.io/coffee-project-1/'
             },
