@@ -6,11 +6,6 @@
     justify-content: center;
     text-align: center;
 }
-.carousel{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
 
 .slider-wrapper > ul > li > div{
@@ -42,4 +37,22 @@
 .legend-hovering:hover{
     display: block;
     cursor: pointer;
+}
+
+.thumbs-wrapper{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
