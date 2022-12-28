@@ -2,6 +2,7 @@ import {Routes, Route} from "react-router-dom";
 import React from "react";
 import App from "./App";
 import {FrontEnd} from "./components/FrontEnd";
+import {BackEnd} from "./components/BackEnd";
 
 
 
@@ -12,6 +13,7 @@ export default function Pages() {
             <Routes>
                 <Route path="/home" element={<App/> }/>
                 <Route path="/front-end" element={<FrontEnd/>}/>
+                <Route path="/back-end" element={<BackEnd/>}/>
 
                 <Route
                     path="*"
