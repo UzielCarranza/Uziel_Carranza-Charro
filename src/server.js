@@ -36,27 +36,27 @@ export const developmentProjects = {
         {
             id: 1,
             title: 'Microservice API Music Store Catalog',
-            url: 'img/music-store-catalog.png',
+            url: 'img/backEnd/music-store-catalog.png',
             description: 'A microservice with a REST API that provides CRUD functionality for a database hosted and deployed on Heroku using Docker to containerize the application.',
             github_location: 'https://github.com/UzielCarranza/music-store-catalog'
         },
         {
             id: 2,
             title: 'Microservice API Music Store Recommendations',
-            url: 'img/music_store_recommendation.png',
+            url: 'img/backEnd/music_store_recommendation.png',
             description: 'A microservice with a REST API that provides CRUD functionality for a database hosted and deployed on Heroku using Docker to containerize the application.',
             github_location: 'https://github.com/UzielCarranza/music-store-recommendation'
         },
         {
             id: 3,
             title: 'Contacts Manager App',
-            url: 'img/contactsManager.png',
+            url: 'img/backEnd/contactsManager.png',
             description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
             github_location: 'https://github.com/Uziel-Daniel/contacts-manager'
         }, {
             id: 4,
             title: 'Hangman Game',
-            url: 'img/hangman.png',
+            url: 'img/backEnd/hangman.png',
             description: 'One of the populars games, the hangman game developed using Java',
             github_location: 'https://github.com/UzielCarranza/hangman-project'
         }
@@ -65,7 +65,7 @@ export const developmentProjects = {
         {
             id: 1,
             title: 'Underground Movies Madness',
-            url: 'img/moviesApp.png',
+            url: 'img/fullStack/moviesApp.png',
             description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
             github_location: 'https://github.com/uziel-tyreik/movies'
         }
