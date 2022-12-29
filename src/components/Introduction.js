@@ -14,7 +14,7 @@ export const Introduction = () => {
             </div>
 
             <p>A <strong className="call-attention_word">Software Developer</strong> with a strong passion for
-                building responsive web applications get to <a href="https://www.linkedin.com/in/uziel-carranza-charro/"
+                building applications that will have a positive impact on the society. Get to<a href="https://www.linkedin.com/in/uziel-carranza-charro/"
                                                                target="_blank"><strong className="call-attention_word">Know
                     me!</strong></a></p>
         </div>
