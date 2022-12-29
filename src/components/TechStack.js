@@ -9,23 +9,23 @@ export const TechStack = () => {
             <div className="front--end">
                 <h1 className="title">Front End</h1>
                 <div className="technologies">
-                    <DiHtml5/>
+                    <DiHtml5 className="technology"/>
                     <p>HTML</p>
                 </div >
                 <div className="technologies">
-                    <DiCss3/>
+                    <DiCss3 className="technology"/>
                     <p>CSS3</p>
                 </div>
                 <div className="technologies">
-                    <DiJqueryLogo/>
+                    <DiJqueryLogo className="technology"/>
                     <p>JQuery</p>
                 </div>
                 <div className="technologies">
-                    <IoLogoJavascript/>
+                    <IoLogoJavascript className="technology"/>
                     <p>JavaScript</p>
                 </div>
                 <div className="technologies">
-                    <DiReact/>
+                    <DiReact className="technology"/>
                     <p>ReactJS</p>
                 </div>
 
@@ -33,19 +33,19 @@ export const TechStack = () => {
             <div className="back--end">
                 <h1 className="title">backend</h1>
                 <div className="technologies">
-                    <DiJava/>
+                    <DiJava className="technology"/>
                     <p>Java</p>
                 </div>
                 <div className="technologies">
-                    <SiSpring/>
+                    <SiSpring className="technology"/>
                     <p>Spring Boot</p>
                 </div>
                 <div className="technologies">
-                    <SiMysql/>
+                    <SiMysql className="technology"/>
                     <p>MySQL</p>
                 </div>
                 <div className="technologies">
-                    <SiDocker/>
+                    <SiDocker className="technology"/>
                     <p>Docker</p>
                 </div>
             </div>

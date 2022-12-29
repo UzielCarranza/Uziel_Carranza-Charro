@@ -1,4 +1,6 @@
-
+*{
+    border: 2px solid red;
+}
 .technologies-wrapper {
     height: 100vh;
     width: 100%;
@@ -26,5 +28,12 @@
 }
 
 .technologies {
-    color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.technology{
+    font-size: 5em;
+    margin: 10px;
 }
