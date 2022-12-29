@@ -20,3 +20,16 @@
 
 /*removes blue link color... it inherits color from parent*/
 a { color: inherit; }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .link-element{
+        width: 30%;
+        height: 30%;
+    }
+    .link-element--wrapper{
+        justify-content: center;
+        text-align: center;
+    }
+}
