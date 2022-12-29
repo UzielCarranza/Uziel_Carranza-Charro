@@ -2,6 +2,7 @@ import {DiCss3, DiHtml5, DiJava, DiJqueryLogo, DiReact} from "react-icons/di";
 import {IoLogoJavascript} from "react-icons/io";
 import {SiDocker, SiMysql, SiSpring} from "react-icons/si";
 import "../styles/technologies.css";
+import {BsFillBootstrapFill} from "react-icons/bs";
 
 export const TechStack = () => {
     return (
@@ -28,6 +29,10 @@ export const TechStack = () => {
                 <div className="technologies">
                     <DiReact style={{color: "#61DBFB"}} className="technology"/>
                     <p>ReactJS</p>
+                </div>
+                <div className="technologies">
+                    <BsFillBootstrapFill style={{color: "rgb(86,61,124)"}} className="technology"/>
+                    <p>BootStrap</p>
                 </div>
 
             </div>
