@@ -9,23 +9,23 @@ export const TechStack = () => {
             <div className="front--end">
                 <h1 className="title">Front End</h1>
                 <div className="technologies">
-                    <DiHtml5 className="technology"/>
+                    <DiHtml5 style={{color: "#e34f26"}} className="technology"/>
                     <p>HTML</p>
                 </div >
                 <div className="technologies">
-                    <DiCss3 className="technology"/>
+                    <DiCss3 style={{color: "#2965f1"}} className="technology"/>
                     <p>CSS3</p>
                 </div>
                 <div className="technologies">
-                    <DiJqueryLogo className="technology"/>
+                    <DiJqueryLogo style={{color: "#0769AD"}} className="technology"/>
                     <p>JQuery</p>
                 </div>
                 <div className="technologies">
-                    <IoLogoJavascript className="technology"/>
+                    <IoLogoJavascript style={{backgroundColor: "#F0DB4F", color: "#323330"}} className="technology"/>
                     <p>JavaScript</p>
                 </div>
                 <div className="technologies">
-                    <DiReact className="technology"/>
+                    <DiReact style={{color: "#61DBFB"}} className="technology"/>
                     <p>ReactJS</p>
                 </div>
 
@@ -33,19 +33,19 @@ export const TechStack = () => {
             <div className="back--end">
                 <h1 className="title">backend</h1>
                 <div className="technologies">
-                    <DiJava className="technology"/>
+                    <DiJava style={{backgroundColor: "#007396", color: "#fff"}} className="technology"/>
                     <p>Java</p>
                 </div>
                 <div className="technologies">
-                    <SiSpring className="technology"/>
+                    <SiSpring style={{color: "#80ea6e"}} className="technology"/>
                     <p>Spring Boot</p>
                 </div>
                 <div className="technologies">
-                    <SiMysql className="technology"/>
+                    <SiMysql style={{color: "#00758F"}} className="technology"/>
                     <p>MySQL</p>
                 </div>
                 <div className="technologies">
-                    <SiDocker className="technology"/>
+                    <SiDocker style={{color: "#0db7ed"}} className="technology"/>
                     <p>Docker</p>
                 </div>
             </div>
