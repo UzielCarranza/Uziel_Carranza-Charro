@@ -4,6 +4,7 @@ import App from "./App";
 import {FrontEnd} from "./components/FrontEnd";
 import {BackEnd} from "./components/BackEnd";
 import {FullStack} from "./components/FullStack";
+import {TechStack} from "./components/TechStack";
 
 
 
@@ -16,6 +17,7 @@ export default function Pages() {
                 <Route path="/front-end" element={<FrontEnd/>}/>
                 <Route path="/back-end" element={<BackEnd/>}/>
                 <Route path="/full-stack" element={<FullStack/>}/>
+                <Route path="/tech-stack" element={<TechStack/>}/>
 
                 <Route
                     path="*"
