@@ -1,0 +1,30 @@
+
+.technologies-wrapper {
+    height: 100vh;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.front--end,
+.back--end {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+}
+
+.technologies {
+    color: rebeccapurple;
+}
