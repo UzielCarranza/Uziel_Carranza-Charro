@@ -80,7 +80,7 @@ export const NavBar = () => {
                             <GrPersonalComputer/>
                         </li>
                         <li>
-                            <a href="/contact">Contact Me</a>
+                            <a href = "mailto: uziel.carranzacharro@gmail.com">Contact Me</a>
                             <GrSend/>
                         </li>
                     </ul>
