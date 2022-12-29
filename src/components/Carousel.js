@@ -13,7 +13,7 @@ export default class CarouselComponent extends Component {
                         <div key={this.props.projects[i].id}>
 
                             <h1 style={{color: "#ffb703"}}>{this.props.projects[i].title}</h1>
-                            <img className="project-img" style={{height: 165, width: 200}}
+                            <img className="project-img"
                                  src={this.props.projects[i].url} alt="s"
                             />
                             <p className="legend">{this.props.projects[i].description}

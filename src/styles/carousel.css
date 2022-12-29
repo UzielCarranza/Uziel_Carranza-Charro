@@ -16,7 +16,8 @@
 
 .slider-wrapper > ul > li > div > .project-img {
     margin: 1em auto;
-
+    height: 35%;
+    width: 70%;
 }
 
 .link-element-carousel {
