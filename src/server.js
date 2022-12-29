@@ -4,7 +4,7 @@ export const developmentProjects = {
             {
                 id: 1,
                 title: 'bomb reporter',
-                url: 'img/frontEnd/pokemons-lister.png',
+                url: 'img/frontEnd/bomb-reporter.png',
                 description: 'A full-stack application developed by a team of four developers focusing to give Ukrainians the tools to report bombs near their area.',
                 github_location: `https://github.com/Team-4-capstone`
             },
