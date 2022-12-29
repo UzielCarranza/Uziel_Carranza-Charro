@@ -35,6 +35,7 @@ li {
     justify-content: space-evenly;
     padding: 0;
     width: 100%;
+    text-align: center;
 }
 
 
@@ -66,7 +67,6 @@ li {
 .hamburger:hover {
     background-color: #2642af;
 }
-
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -118,8 +118,9 @@ li {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         padding: 0.5em;
     }
+
     /*SUBMENU*/
-    .close-submenu{
+    .close-submenu {
         color: red;
         position: absolute;
         top: 5%;
@@ -128,28 +129,19 @@ li {
         font-size: 2em;
     }
 
-    #submenu{
+    #submenu {
         padding-top: 0 !important;
     }
 
-    #submenu li{
+    #submenu li {
         padding-top: 0 !important;
     }
 }
 
-/*!
-TODO: ADD MEDIA QUERIES FOR THE FOLLOWING BREAKPOINTS
 
-*Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...}
-
-*Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {}
-
-
-*Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}
-
-*Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...}
-!*/
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navigation-menu li a {
+        padding: 0.5rem 0;
+    }
+}
