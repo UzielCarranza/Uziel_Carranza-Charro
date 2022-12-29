@@ -6,6 +6,7 @@ import "../styles/technologies.css";
 export const TechStack = () => {
     return (
         <div className="technologies-wrapper">
+            <h1 className="page-title">My Tech Stack</h1>
             <div className="front--end">
                 <h1 className="title">Front End</h1>
                 <div className="technologies">
