@@ -13,7 +13,7 @@ export default function Pages() {
     return (
         <div>
             <Routes>
-                <Route path="/home" element={<App/> }/>
+                <Route path="/" element={<App/> }/>
                 <Route path="/front-end" element={<FrontEnd/>}/>
                 <Route path="/back-end" element={<BackEnd/>}/>
                 <Route path="/full-stack" element={<FullStack/>}/>

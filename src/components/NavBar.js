@@ -19,7 +19,7 @@ export const NavBar = () => {
 
     return (
         <nav className="navigation">
-            <a href="/home" className="brand-name">
+            <a href="/" className="brand-name">
                 Uziel Carranza Charro
             </a>
             {isNavExpanded ? <AiOutlineClose style={{color: "#fff", backgroundColor: "red"}} className="hamburger"
@@ -68,7 +68,7 @@ export const NavBar = () => {
                 <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
                     <ul>
                         <li>
-                            <a href="/home">About</a>
+                            <a href="/">About</a>
                             <BsPersonFill/>
                         </li>
                         <li onClick={() => setIsSubMenuExpanded(!isSubMenuExpanded)}>
