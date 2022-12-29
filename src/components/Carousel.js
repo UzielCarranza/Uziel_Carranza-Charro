@@ -7,17 +7,16 @@ import {BsGithub} from "react-icons/bs";
 export default class CarouselComponent extends Component {
     render() {
         return (
-            <Carousel>
+            <Carousel centerSlidePercentage={true}>
                 {
                     this.props.projects.map((item, i) => (
                         <div key={this.props.projects[i].id}>
 
-                            <h1>title: {this.props.projects[i].title}</h1>
-                            <img className="project-img" style={{height: 100, width: 100}}
+                            <h1 style={{color: "#ffb703"}}>{this.props.projects[i].title}</h1>
+                            <img className="project-img" style={{height: 165, width: 200}}
                                  src={this.props.projects[i].url} alt="s"
                             />
-                            <p className="legend">description: {this.props.projects[i].description}
-                                <br/>
+                            <p className="legend">{this.props.projects[i].description}
                                 <a href={this.props.projects[i].github_location} target="_blank">
                                     <BsGithub style={{backgroundColor: "black", color: "#fff"}}
                                               className="link-element-carousel" title="Github"/>
