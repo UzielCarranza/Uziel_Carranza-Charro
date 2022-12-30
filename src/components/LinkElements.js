@@ -10,16 +10,16 @@ export const LinkElements = () => {
             <div className="link-element--wrapper responsive-row">
                 <a className="link-element" href="https://www.linkedin.com/in/uziel-carranza-charro/"
                    target="_blank">
-                    <BsLinkedin style={{color: "#0e76a8", backgroundColor: "#fff"}} className="link-element" title="LinkedIn"/>
+                    <BsLinkedin style={{color: "#0e76a8", backgroundColor: "#fff"}} className="link-element hover-effect" title="LinkedIn"/>
 
                 </a>
 
                 <a className="link-element" href="https://github.com/UzielCarranza" target="_blank">
-                    <BsGithub style={{backgroundColor: "#f5f5f5"}} className="link-element" title="Github"/>
+                    <BsGithub style={{backgroundColor: "#f5f5f5"}} className="link-element hover-effect" title="Github"/>
                 </a>
 
                 <a className="link-element" href={resume}>
-                    <MdPictureAsPdf style={{color: "#bd2c00", backgroundColor: "#fff"}} className="link-element" title="Resume"/>
+                    <MdPictureAsPdf style={{color: "#bd2c00", backgroundColor: "#fff"}} className="link-element hover-effect" title="Resume"/>
                 </a>
             </div>
         </>
