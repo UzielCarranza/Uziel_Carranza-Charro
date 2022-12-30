@@ -17,6 +17,10 @@ export const NavBar = () => {
         setIsSubMenuExpanded(false);
     }
 
+    const sendEmail = (e) => {
+        e.preventDefault()
+        window.location = 'mailto:uziel.carranzacharro@gmail.com'
+    }
     return (
         <nav className="navigation">
             <a href="/" className="brand-name">
@@ -77,6 +81,10 @@ export const NavBar = () => {
                         </li>
                         <li>
                             <a href="/tech-stack">Tech stack</a>
+                            <GrPersonalComputer/>
+                        </li>
+                        <li>
+                            <a href="/" onClick={sendEmail}>Contact Me</a>
                             <GrPersonalComputer/>
                         </li>
                     </ul>
