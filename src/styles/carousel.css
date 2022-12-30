@@ -9,7 +9,7 @@
 .slider-wrapper > ul > li > div {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     text-align: center;
     height: 25em;
 }
