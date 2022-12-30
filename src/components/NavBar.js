@@ -79,10 +79,6 @@ export const NavBar = () => {
                             <a href="/tech-stack">Tech stack</a>
                             <GrPersonalComputer/>
                         </li>
-                        <li>
-                            <a href = "mailto: uziel.carranzacharro@gmail.com">Contact Me</a>
-                            <GrSend/>
-                        </li>
                     </ul>
                 </div>}
 

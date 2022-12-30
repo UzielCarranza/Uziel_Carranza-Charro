@@ -17,7 +17,7 @@ export default class CarouselComponent extends Component {
                                  src={this.props.projects[i].url} alt="s"
                             />
                             <p className="legend">{this.props.projects[i].description}
-                                <a href={this.props.projects[i].github_location} target="_blank">
+                                <a  rel="noreferrer" href={this.props.projects[i].github_location} target="_blank" >
                                     <BsGithub style={{backgroundColor: "black", color: "#fff"}}
                                               className="link-element-carousel" title="Github"/>
                                 </a>

@@ -3,7 +3,7 @@ import {IoLogoJavascript} from "react-icons/io";
 import {SiDocker, SiMysql, SiSpring} from "react-icons/si";
 import "../styles/technologies.css";
 import {BsFillBootstrapFill} from "react-icons/bs";
-import {AnimatePresence, motion} from "framer-motion"
+import {motion} from "framer-motion"
 
 export const TechStack = () => {
     return (
