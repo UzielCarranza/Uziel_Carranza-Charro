@@ -3,7 +3,7 @@ import "../styles/navbar.css";
 import {useState} from "react";
 import {AiOutlineClose} from "react-icons/ai";
 import {BsPersonFill} from "react-icons/bs";
-import {GrCloudComputer, GrDatabase, GrPersonalComputer, GrSend, GrTask} from "react-icons/gr";
+import {GrCloudComputer, GrDatabase, GrPersonalComputer, GrTask} from "react-icons/gr";
 import {RiArrowGoBackFill} from "react-icons/ri";
 
 //TODO: Add links to all redirecting elements
@@ -72,7 +72,7 @@ export const NavBar = () => {
                             <BsPersonFill/>
                         </li>
                         <li onClick={() => setIsSubMenuExpanded(!isSubMenuExpanded)}>
-                            <a href="#" onClick={(e) => e.preventDefault()}>Projects</a>
+                            <a href="/" onClick={(e) => e.preventDefault()}>Projects</a>
                             <GrTask/>
                         </li>
                         <li>
