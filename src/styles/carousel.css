@@ -33,11 +33,11 @@
 }
 
 
-.legend > a{
+.legend > a {
     margin-top: 1em;
 }
 
-.legend{
+.legend {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -46,7 +46,7 @@
     background-color: #000;
 }
 
-.legend:before{
+.legend:before {
     background-color: #000;
     display: block;
     cursor: pointer;
@@ -76,10 +76,93 @@
     height: 5rem !important;
 }
 
-.carousel-slider{
+.carousel-slider {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .slider-wrapper > ul > li > div {
+        height: 35em;
+    }
+
+    .slider-wrapper > ul > li > div > .project-img {
+        margin: 1em auto;
+        height: 50%;
+        width: 50%;
+    }
+
+    .link-element-carousel {
+        height: 80%;
+        width: 100%;
+    }
+
+
+    .control-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 70%;
+    }
+
+    .legend {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 70%;
+        background-color: #000;
+    }
+    .legend > a {
+        font-size: 8em;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .legend:before {
+        background-color: #000;
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .thumbs-wrapper {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumb > .project-img {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+    .carousel-slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 }
