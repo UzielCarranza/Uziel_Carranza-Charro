@@ -7,6 +7,7 @@ import {FullStack} from "./components/FullStack";
 import {TechStack} from "./components/TechStack";
 import {useEffect, useState} from "react";
 import {LoadingScreen} from "./components/LoadingScreen";
+import {NotFound} from "./components/NotFound";
 
 
 export default function Pages() {
@@ -32,8 +33,8 @@ export default function Pages() {
                 <Route
                     path="*"
                     element={
-                        <main style={{padding: "1rem"}}>
-                            <p>There's nothing here!</p>
+                        <main>
+                            <NotFound/>
                         </main>
                     }
                 />
