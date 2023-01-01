@@ -4,11 +4,35 @@ import {SiDocker, SiMysql, SiSpring} from "react-icons/si";
 import "../styles/technologies.css";
 import {BsFillBootstrapFill} from "react-icons/bs";
 import {motion} from "framer-motion"
+import {Tabs} from "./Tabs";
+import {useState} from "react";
 
 export const TechStack = () => {
+    const [isFrontEndSelected, setIsFrontEndSelected] = useState(true);
+    const [isBackEndSelected, setIsBackEndSelected] = useState(false);
+
+    const frontEndSelected = () => {
+        setIsFrontEndSelected(true);
+        setIsBackEndSelected(false);
+    }
+    const backEndSelected = () => {
+        setIsFrontEndSelected(false);
+        setIsBackEndSelected(true);
+    }
+
     return (
         <div className="technologies-wrapper">
             <h1 className="page-title">My Tech Stack</h1>
+            <ul className="flex flex-wrap border-b border-gray-200 dark:border-gray-700">
+                <li className="mr-2" onClick={frontEndSelected}>
+                    {isFrontEndSelected ? <Tabs category={"Front End true"} display={true}/> :
+                        <Tabs category={"Front End false"} display={false}/>}
+                </li>
+                <li className="mr-2" onClick={backEndSelected}>
+                    {isBackEndSelected ? <Tabs category={"Back End true "} display={true}/> :
+                        <Tabs category={"Back End false"} display={false}/>}
+                </li>
+            </ul>
             <div className="front--end">
                 <motion.div
                     className="box title"
