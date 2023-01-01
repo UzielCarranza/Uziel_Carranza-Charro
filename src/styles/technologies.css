@@ -1,3 +1,6 @@
+@tailwind components;
+@tailwind utilities;
+
 .technologies-wrapper {
     height: 100%;
     width: 100%;
