@@ -1,169 +1,61 @@
-import {DiCss3, DiHtml5, DiJava, DiJqueryLogo, DiReact} from "react-icons/di";
-import {IoLogoJavascript} from "react-icons/io";
-import {SiDocker, SiMysql, SiSpring} from "react-icons/si";
 import "../styles/technologies.css";
-import {BsFillBootstrapFill} from "react-icons/bs";
-import {motion} from "framer-motion"
-import {Tabs} from "./Tabs";
-import {useState} from "react";
+import MediaQuery from "react-responsive";
+import {TechStackMobileView} from "./TechStackMobileView";
+import {BackEndStack} from "./BackEndStack";
+import {FrontEndStack} from "./FrontEndStack";
+import {motion} from "framer-motion";
 
 export const TechStack = () => {
-    const [isFrontEndSelected, setIsFrontEndSelected] = useState(true);
-    const [isBackEndSelected, setIsBackEndSelected] = useState(false);
-
-    const frontEndSelected = () => {
-        setIsFrontEndSelected(true);
-        setIsBackEndSelected(false);
-    }
-    const backEndSelected = () => {
-        setIsFrontEndSelected(false);
-        setIsBackEndSelected(true);
-    }
-
     return (
         <div className="technologies-wrapper">
             <h1 className="page-title">My Tech Stack</h1>
-            <ul className="flex flex-wrap border-b border-gray-200 dark:border-gray-700">
-                <li className="mr-2" onClick={frontEndSelected}>
-                    {isFrontEndSelected ? <Tabs category={"Front End true"} display={true}/> :
-                        <Tabs category={"Front End false"} display={false}/>}
-                </li>
-                <li className="mr-2" onClick={backEndSelected}>
-                    {isBackEndSelected ? <Tabs category={"Back End true "} display={true}/> :
-                        <Tabs category={"Back End false"} display={false}/>}
-                </li>
-            </ul>
-            <div className="front--end">
-                <motion.div
-                    className="box title"
-                    animate={{
-                        scale: [1, 1, 1, 1, 1],
-                        rotate: [0, 0, 10, 10, 0],
-                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                    }}
-                    transition={{
-                        duration: 2,
-                        ease: "easeInOut",
-                        times: [0, 0.2, 0.5, 0.8, 1],
-                        repeat: Infinity,
-                        repeatDelay: 50
-                    }}
-                >
-                    <h1>Front End</h1>
-                </motion.div>
 
-                <motion.div
-                    className="box"
-                    animate={{
-                        scale: [1, 1, 1, 1, 1],
-                        rotate: [0, 0, 10, 10, 0],
-                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                    }}
-                    transition={{
-                        duration: 2,
-                        ease: "easeInOut",
-                        times: [0, 0.2, 0.5, 0.8, 1],
-                        repeat: Infinity,
-                        repeatDelay: 1
-                    }}
-                >
-                    <div className="technologies">
-                        <DiHtml5 style={{color: "#e34f26"}} className="technology"/>
-                        <p>HTML</p>
-                    </div>
-                </motion.div>
+            <MediaQuery maxDeviceWidth={1224}>
+                <TechStackMobileView/>
+            </MediaQuery>
 
-                <div className="technologies">
-                    <DiCss3 style={{color: "#2965f1"}} className="technology"/>
-                    <p>CSS3</p>
-                </div>
-                <div className="technologies">
-                    <DiJqueryLogo style={{color: "#0769AD"}} className="technology"/>
-                    <p>JQuery</p>
-                </div>
-                <div className="technologies">
-                    <IoLogoJavascript style={{backgroundColor: "#F0DB4F", color: "#323330"}} className="technology"/>
-                    <p>JavaScript</p>
-                </div>
-                <div className="technologies">
+            <MediaQuery minDeviceWidth={1224}>
+                <div className="front--end">
                     <motion.div
-                        className="box"
+                        className="box title"
                         animate={{
-                            scale: [2, 1, 1, 2, 2],
-                            borderRadius: ["0%", "0%", "20%", "20%", "0%"]
+                            scale: [1, 1, 1, 1, 1],
+                            rotate: [0, 0, 10, 10, 0],
+                            borderRadius: ["0%", "0%", "50%", "50%", "0%"]
                         }}
                         transition={{
                             duration: 2,
                             ease: "easeInOut",
                             times: [0, 0.2, 0.5, 0.8, 1],
                             repeat: Infinity,
-                            repeatDelay: 0.5
+                            repeatDelay: 50
                         }}
                     >
-                        <DiReact style={{color: "#61DBFB"}} className="technology"/>
-
+                        <h1>Front End</h1>
                     </motion.div>
-                    <p>ReactJS</p>
+                    <FrontEndStack/>
                 </div>
-
-                <div className="technologies">
-                    <BsFillBootstrapFill style={{color: "rgb(86,61,124)"}} className="technology"/>
-                    <p>BootStrap</p>
+                <div className="back--end">
+                    <motion.div
+                        className="box title"
+                        animate={{
+                            scale: [1, 1, 1, 1, 1],
+                            rotate: [0, 0, 10, 10, 0],
+                            borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                        }}
+                        transition={{
+                            duration: 2,
+                            ease: "easeInOut",
+                            times: [0, 0.2, 0.5, 0.8, 1],
+                            repeat: Infinity,
+                            repeatDelay: 50
+                        }}
+                    >
+                        <h1>Back End</h1>
+                    </motion.div>
+                    <BackEndStack/>
                 </div>
-
-            </div>
-            <div className="back--end">
-                <motion.div
-                    className="box title"
-                    animate={{
-                        scale: [1, 1, 1, 1, 1],
-                        rotate: [0, 0, 10, 10, 0],
-                        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-                    }}
-                    transition={{
-                        duration: 2,
-                        ease: "easeInOut",
-                        times: [0, 0.2, 0.5, 0.8, 1],
-                        repeat: Infinity,
-                        repeatDelay: 50
-                    }}
-                >
-                    <h1>backend</h1>
-                </motion.div>
-                <div className="technologies">
-                    <DiJava style={{backgroundColor: "#007396", color: "#fff"}} className="technology"/>
-                    <p>Java</p>
-                </div>
-
-                <motion.div
-                    className="box"
-                    animate={{
-                        scale: [1, 1, 2, 1, 1],
-                        rotate: [0, 0, 180, 180, 0],
-                        borderRadius: ["0%", "0%", "20%", "20%", "0%"]
-                    }}
-                    transition={{
-                        duration: 2,
-                        ease: "easeInOut",
-                        times: [0, 0.2, 0.5, 0.8, 1],
-                        repeat: Infinity,
-                        repeatDelay: 50
-                    }}
-                >
-                    <div className="technologies">
-                        <SiSpring style={{color: "#80ea6e"}} className="technology"/>
-                        <p>Spring Boot</p>
-                    </div>
-                </motion.div>
-                <div className="technologies">
-                    <SiMysql style={{color: "#00758F"}} className="technology"/>
-                    <p>MySQL</p>
-                </div>
-                <div className="technologies">
-                    <SiDocker style={{color: "#0db7ed"}} className="technology"/>
-                    <p>Docker</p>
-                </div>
-            </div>
+            </MediaQuery>
         </div>
     )
 }
