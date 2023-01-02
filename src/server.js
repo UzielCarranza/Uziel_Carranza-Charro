@@ -64,6 +64,12 @@ export const developmentProjects = {
     fullStack: [
         {
             id: 1,
+            title: 'Inventory Tracker',
+            url: 'img/fullStack/inventory.png',
+            description: 'A React application that allows users to track their inventory and keep track of their products. Features include CRUD functionality',
+            github_location: 'https://github.com/Haguermeister/Summative-1-Austin-Uziel'
+        }, {
+            id: 2,
             title: 'Underground Movies Madness',
             url: 'img/fullStack/moviesApp.png',
             description: 'A pair programming project developed with vanilla javaScript, CSS3, and HTML5',
